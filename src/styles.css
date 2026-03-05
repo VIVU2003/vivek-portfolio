@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+
+body{
+    margin:0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+  }
+  
+  /* Section spacing */
+  
+  section{
+    padding:100px 20px;
+  }
+  
+  /* Headings */
+  
+  h1,h2,h3{
+    margin:0;
+  }
+  
+  /* Cards */
+  
+  .card{
+    background:#1e293b;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.4);
+  }
+  
+  /* Buttons */
+  
+  button{
+    background:#2563eb;
+    border:none;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+  }
+  
+  button:hover{
+    background:#1d4ed8;
+  }

@@ -23,34 +23,33 @@ import { PORTFOLIO_DATA } from '../../data/portfolio-data';
   `,
   styles: [`
   .hero{
-    padding:120px 20px;
+    padding-top:140px;
     text-align:center;
   }
-
+  
   h1{
-    font-size:3rem;
-    font-weight:bold;
+    font-size:3.2rem;
+    font-weight:700;
   }
-
+  
   h2{
-    color:gray;
-    margin-bottom:20px;
+    color:#94a3b8;
+    margin:20px 0;
   }
-
+  
   p{
     max-width:700px;
     margin:auto;
-    line-height:1.6;
+    line-height:1.7;
+    color:#cbd5f5;
   }
-
+  
   .buttons{
-    margin-top:30px;
+    margin-top:35px;
   }
-
+  
   button{
-    padding:12px 20px;
     margin:10px;
-    cursor:pointer;
   }
   `]
 })

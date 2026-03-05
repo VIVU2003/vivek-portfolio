@@ -52,5 +52,51 @@ export const PORTFOLIO_DATA = {
         degree: "Montessori III (MIII) - Grade, Schooling",
         duration: "March 2007 - April 2019"
       }
-    ]
+    ],
+    projects: [
+
+      {
+      title: "Remo",
+      duration: "Dec 2024 – Jan 2025",
+      description: "AI-powered tool that generates professional README.md files from any GitHub repository URL using Gemini.",
+      tech: ["React","TypeScript","Express","Prisma","Gemini"],
+      details:[
+      "Uses simpleGit to analyze repository file structure.",
+      "Breaks repository into chunks up to Gemini's 4096 token limit.",
+      "Automatically generates standardized README.md documentation."
+      ],
+      github:"https://github.com/VIVU2003"
+      },
+      
+      {
+      title:"Medium Clone",
+      duration:"Jan 2025 – Feb 2025",
+      description:"A Medium-like blogging platform where users can create, edit and publish articles.",
+      tech:["React","Node","Express","MongoDB","TypeScript"],
+      details:[
+      "Implemented rich text editor with formatting tools.",
+      "Designed backend for posts, authentication and interactions.",
+      "Optimized React frontend for responsive UI."
+      ],
+      github:"https://github.com/VIVU2003"
+      },
+      
+      {
+      title:"Gate-Pass System",
+      duration:"Feb 2025 – June 2025",
+      description:"A digital student leave approval system with authentication and QR security.",
+      tech:["React","TypeScript","Prisma","PostgreSQL"],
+      details:[
+      "Built full stack leave management system using Express.js.",
+      "Implemented JWT based role authentication and parental email verification.",
+      "Automated QR code generation for entry/exit logging."
+      ],
+      github:"https://github.com/VIVU2003"
+      }
+      
+      ],
+      contact:{
+        email:"kewalramanivivekk84828@gmail.com",
+        linkedin:"https://www.linkedin.com/in/vivek-kewalramani/"
+        }
   };

@@ -4,6 +4,8 @@ import { HeroComponent } from '../components/hero/hero';
 import { NavbarComponent } from '../components/navbar/navbar';
 import { ExperienceComponent } from '../components/experience/experience';
 import { SkillsComponent } from '../components/skills/skills';
+import { ProjectsComponent } from '../components/projects/projects';
+import { ContactComponent } from '../components/contact/contact';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -11,9 +13,11 @@ import { SkillsComponent } from '../components/skills/skills';
   <app-navbar></app-navbar>
   <app-hero></app-hero>
   <app-experience></app-experience>
-  <app-skills></app-skills>
+  <app-skills></app-skills> 
+  <app-projects></app-projects>
+  <app-contact></app-contact>
   `,
-  imports:[HeroComponent,NavbarComponent,ExperienceComponent,SkillsComponent],
+  imports:[HeroComponent,NavbarComponent,ExperienceComponent,SkillsComponent,ProjectsComponent,ContactComponent],
   styles: [`
     .hero {
       padding: 80px 20px;

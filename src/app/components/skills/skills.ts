@@ -40,8 +40,15 @@ import { PORTFOLIO_DATA } from '../../data/portfolio-data';
 
   .skill{
     padding:10px 20px;
-    background:#eee;
+    background:#334155;
+    color:#e2e8f0;
     border-radius:20px;
+    font-size:0.9rem;
+    transition:background 0.2s;
+  }
+  
+  .skill:hover{
+    background:#475569;
   }
   `]
 })

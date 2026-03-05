@@ -43,23 +43,30 @@ import { PORTFOLIO_DATA } from '../../data/portfolio-data';
     font-size:2rem;
     margin-bottom:40px;
   }
+.card{
+        max-width:600px;
+        margin:20px auto;
+        padding:25px;
+        border-radius:12px;
+        background:#1e293b;
+        color:#e2e8f0;
+        text-align:left;
+        box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    }
+  
 
-  .card{
-    max-width:600px;
-    margin:20px auto;
-    padding:25px;
-    border-radius:10px;
-    background:#f5f5f5;
-    text-align:left;
-  }
-
-  .company{
-    font-weight:bold;
-  }
-
-  .duration{
-    color:gray;
-  }
+    .company{
+        font-weight:bold;
+        color:#cbd5f5;
+      }
+      
+      .duration{
+        color:#94a3b8;
+      }
+      
+      .location{
+        color:#64748b;
+      }
   `]
 })
 export class ExperienceComponent{
