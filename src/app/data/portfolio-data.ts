@@ -1,7 +1,7 @@
 export const PORTFOLIO_DATA = {
     name: "Vivek Kewalramani",
     title: "Web Developer | DSA | Final Year @ Thapar Institute of Engineering & Technology",
-    summary: `Final Engineering Student at Thapar Institute of Engineering and Technology studying Computer Science. I'm a technology enthusiast who is now learning Web Development and DSA while having a foundation in C++, Python, C, and OOPS.
+    summary: `Final Engineering Student at Thapar Institute of Engineering and Technology studying Computer Science. I'm a technology enthusiast who is now learning Full stack web Development.
   
   Looking for internships and full time opportunites in the technology field where I can put my abilities to use and support cutting-edge projects. Connect with one another and advance technology together!`,
     location: "Gurgaon,Haryana, India",
@@ -30,6 +30,9 @@ export const PORTFOLIO_DATA = {
         "TypeScript",
         "Express.js",
       "Node.js",
+      "SQL",
+      "MongoDB",
+      "Prisma",
       "GitHub",
       "C++",
       "C",
@@ -37,11 +40,46 @@ export const PORTFOLIO_DATA = {
       "DSA"
     ],
     certifications: [
-      "Certificate of Participation in Level 1: E-Commerce",
-      "Certificate of Participation - Derivative Markets",
-      "What Is Generative AI?",
-      "Build Real World AI Applications with Gemini and Imagen Skill Badge",
-      "Hacklipse"
+      {
+        title: "Career Essentials in Generative AI",
+        issuer: "Microsoft & LinkedIn",
+        date: "Mar 2026",
+        skills: [
+        "AI for Business",
+        "Microsoft Copilot",
+        "Responsible AI",
+        "Prompt Engineering"
+        ]
+        },
+        
+        {
+        title: "What Is Generative AI?",
+        issuer: "LinkedIn",
+        date: "Feb 2026",
+        skills: [
+        "Generative AI Tools",
+        "Artificial Intelligence"
+        ]
+        },
+        
+        {
+        title: "Certificate of Participation - Derivative Markets",
+        issuer: "Futures First",
+        date: "Jan 2026",
+        credential: "35d14060-6c14-46b9-ab4a-9d69450d9436"
+        },
+        
+        {
+        title: "Build Real World AI Applications with Gemini and Imagen",
+        issuer: "Google",
+        date: "Apr 2025"
+        },
+        
+        {
+        title: "Certificate of Participation in Level 1: E-Commerce",
+        issuer: "Unstop",
+        date: "Aug 2024"
+        }
     ],
     education: [
       {
@@ -59,6 +97,7 @@ export const PORTFOLIO_DATA = {
         duration: "March 2007 - April 2019"
       }
     ],
+
     projects: [
 
       {

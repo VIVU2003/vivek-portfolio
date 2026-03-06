@@ -6,67 +6,65 @@ import { PORTFOLIO_DATA } from '../../data/portfolio-data';
   standalone: true,
   template: `
   <section id="experience" class="experience">
-
-    <h2>Experience</h2>
-
-    @for (exp of data.experience; track exp.company) {
-
-      <div class="card">
-
-        <h3>{{exp.role}}</h3>
-
-        <p class="company">
-          {{exp.company}}
-        </p>
-
-        <p class="duration">
-          {{exp.duration}}
-        </p>
-
-        <p class="location">
-          {{exp.location}}
-        </p>
-
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-subtitle">
+        Roles and communities where I worked, learned, and contributed.
+      </p>
+      <div class="timeline">
+        @for (exp of data.experience; track exp.company) {
+          <div class="card experience-card">
+            <h3>{{exp.role}}</h3>
+            <p class="company">{{exp.company}}</p>
+            <p class="duration">{{exp.duration}}</p>
+            <p class="location">{{exp.location}}</p>
+          </div>
+        }
       </div>
-
-    }
-
+    </div>
   </section>
   `,
   styles:[`
   .experience{
-    padding:80px 20px;
-    text-align:center;
+    text-align: left;
   }
 
-  h2{
-    font-size:2rem;
-    margin-bottom:40px;
+  .timeline {
+    display: grid;
+    gap: 18px;
+    max-width: 900px;
+    margin: 0;
   }
-.card{
-        max-width:600px;
-        margin:20px auto;
-        padding:25px;
-        border-radius:12px;
-        background:#1e293b;
-        color:#e2e8f0;
-        text-align:left;
-        box-shadow:0 6px 20px rgba(0,0,0,0.4);
-    }
+
+  .experience-card {
+    text-align: left;
+    border-left: 3px solid rgba(37, 99, 235, 0.45);
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
   
-
-    .company{
-        font-weight:bold;
-        color:#cbd5f5;
-      }
+  .company{
+    font-weight:700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+  }
       
-      .duration{
-        color:#94a3b8;
-      }
+  .duration{
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+  }
       
-      .location{
-        color:#64748b;
-      }
+  .location{
+    color: var(--text-muted);
+  }
+  .section-subtitle{
+    color: var(--text-secondary);
+    margin: 0 0 30px;
+    max-width: 620px;
+  }
   `]
 })
 export class ExperienceComponent{

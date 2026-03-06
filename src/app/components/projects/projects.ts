@@ -5,117 +5,100 @@ import { PORTFOLIO_DATA } from '../../data/portfolio-data';
   selector: 'app-projects',
   standalone: true,
   template: `
-  <section id="projects">
-
-<h2>Projects</h2>
-
-<div class="projects-grid">
-
-@for (project of data.projects; track project.title) {
-
-<div class="card">
-
-<h3>{{project.title}}</h3>
-
-<p class="duration">{{project.duration}}</p>
-
-<p>{{project.description}}</p>
-
-<div class="tech">
-
-@for (tech of project.tech; track tech) {
-<span class="tech-tag">{{tech}}</span>
-}
-
-</div>
-
-<ul class="details">
-
-@for (point of project.details; track point) {
-<li>{{point}}</li>
-}
-
-</ul>
-
-<a [href]="project.github" target="_blank">
-<button>View Code</button>
-</a>
-
-</div>
-
-}
-
-</div>
-
-</section>
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">
+        Selected work that demonstrates my frontend, backend, and problem-solving skills.
+      </p>
+      <div class="projects-grid">
+        @for (project of data.projects; track project.title) {
+          <article class="card project-card">
+            <h3>{{project.title}}</h3>
+            <p class="duration">{{project.duration}}</p>
+            <p class="description">{{project.description}}</p>
+            <div class="tech">
+              @for (tech of project.tech; track tech) {
+                <span class="tech-tag">{{tech}}</span>
+              }
+            </div>
+            <ul class="details">
+              @for (point of project.details; track point) {
+                <li>{{point}}</li>
+              }
+            </ul>
+            <a [href]="project.github" target="_blank" rel="noopener noreferrer">
+              <button>View Code</button>
+            </a>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
   `,
   styles: [`
-  button{
-    background:#2563eb;
-    border:none;
-    padding:10px 18px;
-    border-radius:8px;
-    color:white;
-    cursor:pointer;
-    transition:background 0.2s;
-  }
-  
-  button:hover{
-    background:#1d4ed8;
-  }
-  .projects-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-    max-width:1100px;
-    margin:auto;
-    }
- 
-  section{
-    text-align:center;
-  }
-
-  h2{
-    font-size:2rem;
-    margin-bottom:40px;
+  .projects{
+    text-align: left;
   }
 
   .projects-grid{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
   }
 
-  .card{
-    max-width:350px;
-    background:#1e293b;
-    border-radius:12px;
-    padding:25px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.4);
-    transition:all 0.3s ease;
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
-  .card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 14px 30px rgba(0,0,0,0.6);
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .duration {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+  }
+
+  .description {
+    color: var(--text-secondary);
+    margin-bottom: 14px;
   }
 
   .tech{
-    margin:15px 0;
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .tech-tag{
-    background:#334155;
-    padding:6px 12px;
-    border-radius:6px;
-    margin:4px;
-    display:inline-block;
-    font-size:0.85rem;
-    transition:background 0.2s;
+    background: var(--surface-soft);
+    border: 1px solid var(--border-soft);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    color: var(--text-primary);
   }
-  
-  .tech-tag:hover{
-    background:#475569;
+
+  .details {
+    margin: 0 0 16px;
+    padding-left: 18px;
+    color: var(--text-secondary);
+  }
+
+  li + li {
+    margin-top: 6px;
+  }
+
+  a {
+    margin-top: auto;
+    width: fit-content;
   }
 
   `]
