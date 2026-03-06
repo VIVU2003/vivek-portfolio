@@ -14,6 +14,12 @@ export const PORTFOLIO_DATA = {
         duration: "February 2023 - February 2024 (1 year 1 month)",
         location: "Patiala, Punjab, India"
       }
+      ,{
+        company: "Google developer student club , TIET",
+        role: "Core Member",
+        duration: "July 2023 - July 2025 (2 years)",
+        location: "Patiala, Punjab, India"
+      }
     ],
     skills: [
         "HTML",

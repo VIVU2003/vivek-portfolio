@@ -30,6 +30,7 @@ import { PORTFOLIO_DATA } from '../../data/portfolio-data';
   }
 
   .skills-grid{
+    padding:20px 0;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
